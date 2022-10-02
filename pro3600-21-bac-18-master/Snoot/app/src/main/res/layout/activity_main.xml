@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:background="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/podometre_button2"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="80dp"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:rotation="270"
+            android:text="@string/podom_tre"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="#000"
+            app:layout_constraintBottom_toTopOf="@+id/shop_button2"
+            app:layout_constraintEnd_toEndOf="@+id/shop_button2" />
+
+        <Button
+            android:id="@+id/alarm_button2"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="80dp"
+            android:fontFamily="@font/rubik_medium"
+            android:gravity="center"
+            android:rotation="270"
+            android:text="@string/r_veil"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="#000"
+            app:layout_constraintBottom_toTopOf="@+id/podometre_button2"
+            app:layout_constraintEnd_toEndOf="@+id/podometre_button2" />
+
+        <Button
+            android:id="@+id/acc_button2"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginBottom="80dp"
+            android:fontFamily="@font/rubik_medium"
+
+            android:gravity="center"
+            android:rotation="270"
+            android:text="@string/accueil"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="#000"
+            app:layout_constraintBottom_toTopOf="@+id/alarm_button2"
+            app:layout_constraintEnd_toEndOf="@+id/alarm_button2"
+            app:layout_constraintStart_toStartOf="@+id/alarm_button2" />
+
+        <Button
+            android:id="@+id/shop_button2"
+            android:layout_width="130dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="140dp"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:rotation="270"
+            android:text="@string/boutique"
+            android:background="?android:attr/selectableItemBackground"
+            android:textColor="#000"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/image1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="center"
+        android:scaleX="0.525"
+        android:scaleY="0.525"
+        android:translationY="-33dp"
+        android:translationX="40dp"
+        android:src="@drawable/player1a"
+        android:backgroundTintMode="screen"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="96dp"
+        android:layout_height="26dp"
+        android:layout_marginBottom="16dp"
+        android:text="bourse"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.625"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
